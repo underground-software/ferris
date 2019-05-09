@@ -45,6 +45,8 @@
 #include <xalanc/XercesParserLiaison/FormatterToXercesDOM.hpp>
 #include <xalanc/XercesParserLiaison/XercesDOMFormatterWalker.hpp>
 
+#include <xalanc/PlatformSupport/XalanMemoryManagerDefault.hpp>
+
 using namespace std;
 using namespace Ferris;
 using namespace FerrisXSLT;
@@ -124,8 +126,9 @@ int main( int argc, char** argv )
             fh_domdoc theDOM = Factory::makeDOM( xmlContext );
             cerr << "have the DOM" << endl;
             
-            XercesDOMSupport theDOMSupport;
-            XercesParserLiaison theParserLiaison(theDOMSupport);
+	    XalanMemoryManagerDefault theMemoryManager ;
+            XercesParserLiaison theParserLiaison(theMemoryManager);
+            XercesDOMSupport theDOMSupport(theParserLiaison);
             cerr << "about to make ParsedSource..." << endl;
 
             const XercesDOMWrapperParsedSource parsedSource(
