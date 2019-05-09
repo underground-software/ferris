@@ -58,7 +58,7 @@ namespace FerrisXSLT
          * @param args             vector of pointers to XObject arguments
          * @return                 pointer to the result XObject
          */
-        virtual XObjectPtr execute( XPathExecutionContext& executionContext,
+        virtual XObjectPtr execute( XPathExecutionContextDefault& executionContext,
                                     XalanNode* context,
                                     const XObjectArgVectorType & args, // vector<XObjectPtr>
                                     const Locator* locator ) const
@@ -140,7 +140,7 @@ namespace FerrisXSLT
          * @param args             vector of pointers to XObject arguments
          * @return                 pointer to the result XObject
          */
-        virtual XObjectPtr execute( XPathExecutionContext& executionContext,
+        virtual XObjectPtr execute( XPathExecutionContextDefault& executionContext,
                                     XalanNode* context,
                                     const XObjectArgVectorType & args, // vector<XObjectPtr>
                                     const Locator* locator ) const
@@ -226,7 +226,7 @@ namespace FerrisXSLT
          * @param args             vector of pointers to XObject arguments
          * @return                 pointer to the result XObject
          */
-        virtual XObjectPtr execute( XPathExecutionContext& executionContext,
+        virtual XObjectPtr execute( XPathExecutionContextDefault& executionContext,
                                     XalanNode* context,
                                     const XObjectArgVectorType & args, // vector<XObjectPtr>
                                     const Locator* locator ) const
@@ -308,7 +308,7 @@ namespace FerrisXSLT
          * @param args             vector of pointers to XObject arguments
          * @return                 pointer to the result XObject
          */
-        virtual XObjectPtr execute( XPathExecutionContext& executionContext,
+        virtual XObjectPtr execute( XPathExecutionContextDefault& executionContext,
                                     XalanNode* context,
                                     const XObjectArgVectorType & args, // vector<XObjectPtr>
                                     const Locator* locator ) const
@@ -378,7 +378,7 @@ namespace FerrisXSLT
          * @param args             vector of pointers to XObject arguments
          * @return                 pointer to the result XObject
          */
-        virtual XObjectPtr execute( XPathExecutionContext& executionContext,
+        virtual XObjectPtr execute( XPathExecutionContextDefault& executionContext,
                                     XalanNode* context,
                                     const XObjectArgVectorType & args, // vector<XObjectPtr>
                                     const Locator* locator ) const
@@ -436,7 +436,7 @@ namespace FerrisXSLT
          * @param args             vector of pointers to XObject arguments
          * @return                 pointer to the result XObject
          */
-        virtual XObjectPtr execute( XPathExecutionContext& executionContext,
+        virtual XObjectPtr execute( XPathExecutionContextDefault& executionContext,
                                     XalanNode* context,
                                     const XObjectArgVectorType & args, // vector<XObjectPtr>
                                     const Locator* locator ) const
@@ -560,7 +560,7 @@ namespace FerrisXSLT
          * @param args             vector of pointers to XObject arguments
          * @return                 pointer to the result XObject
          */
-        virtual XObjectPtr execute( XPathExecutionContext& executionContext,
+        virtual XObjectPtr execute( XPathExecutionContextDefault& executionContext,
                                     XalanNode* context,
                                     const XObjectArgVectorType & args, // vector<XObjectPtr>
                                     const Locator* locator ) const
@@ -629,7 +629,7 @@ namespace FerrisXSLT
          * @param args             vector of pointers to XObject arguments
          * @return                 pointer to the result XObject
          */
-        virtual XObjectPtr execute( XPathExecutionContext& executionContext,
+        virtual XObjectPtr execute( XPathExecutionContextDefault& executionContext,
                                     XalanNode* context,
                                     const XObjectArgVectorType & args, // vector<XObjectPtr>
                                     const Locator* locator ) const
@@ -698,7 +698,7 @@ namespace FerrisXSLT
          * @param args             vector of pointers to XObject arguments
          * @return                 pointer to the result XObject
          */
-        virtual XObjectPtr execute( XPathExecutionContext& executionContext,
+        virtual XObjectPtr execute( XPathExecutionContextDefault& executionContext,
                                     XalanNode* context,
                                     const XObjectArgVectorType & args, // vector<XObjectPtr>
                                     const Locator* locator ) const
