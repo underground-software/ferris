@@ -38,12 +38,12 @@
 #  include <ostream>
 #endif
 
-#include "boost/dynamic_bitset_fwd.hpp"
-#include "boost/detail/dynamic_bitset.hpp"
-#include "boost/detail/iterator.hpp" // used to implement append(Iter, Iter)
-#include "boost/static_assert.hpp"
+#include <boost/dynamic_bitset_fwd.hpp>
+#include <boost/dynamic_bitset/detail/dynamic_bitset.hpp>
+#include <boost/detail/iterator.hpp> // used to implement append(Iter, Iter)
+#include <boost/static_assert.hpp>
 #include <boost/limits.hpp>
-#include "boost/pending/lowest_bit.hpp" // used by find_first/next
+#include <boost/dynamic_bitset/detail/lowest_bit.hpp> // used by find_first/next
 
 
 namespace boost {
@@ -1201,7 +1201,7 @@ mmap_dynamic_bitset<Block, Allocator>::m_do_find_from(size_type first_block) con
     if (i >= num_blocks())
         return npos; // not found
 
-    return i * bits_per_block + boost::lowest_bit(m_bits[i]);
+    return i * bits_per_block + boost::detail::lowest_bit(m_bits[i]);
 
 }
 
